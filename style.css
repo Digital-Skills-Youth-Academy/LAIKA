@@ -1,0 +1,11 @@
+.nav-button {
+display:flex;
+justify-content:flex-start;
+padding: 20px;
+font-size: 30px;
+
+}
+
+.hiddenButton {
+    display: none;
+}
