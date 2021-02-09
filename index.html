@@ -8,7 +8,7 @@
     </head>
 
     <body>
-        <header>
+        <header id="header">
             <div>
                 <button class="nav-button">Nav 1</button>
             </div>
@@ -27,7 +27,7 @@
         </header>
 
         <container>
-            <div>
+            <div id="percentageArt">
                 <canvas></canvas>
             </div>
             <div>
@@ -42,29 +42,31 @@
 
         <container>
             <div>
-                <h2>Your Images</h2>
-            </div>
-            <div>
-                <button>+</button> <!--This button is for adding images.-->
-            </div>
-            <div></div>
-            <img class="image" />
-            <div>
+                <div>
+                    <h2>Your Images</h2>
+                </div>
+                <div>
+                    <button id="newImage">+</button> <!--This button is for adding images.-->
+                </div>
+                <div></div>
                 <img class="image" />
-            </div>
-            <div>
-                <img class="image" />
+                <div>
+                    <img class="image" />
+                </div>
+                <div>
+                    <img class="image" />
+                </div>
             </div>
             <!--These divs will hold comments for each image.-->
             <div>
                 <div>
-                    <p></p>
+                    <p id="imageComment1"></p>
                 </div>
                 <div>
-                    <input type="text" />
+                    <input id="inputField1" type="text" />
                 </div>
                 <div>
-                    <input type="submit" />
+                    <input id="submitButton1" type="submit" />
                 </div>
                 <div class="hiddenButton">
                     <button>Edit</button>
@@ -72,13 +74,13 @@
             </div>
             <div>
                 <div>
-                    <p></p>
+                    <p id="imageComment2"></p>
                 </div>
                 <div>
-                    <input type="text" />
+                    <input id="inputField2" type="text" />
                 </div>
                 <div>
-                    <input type="submit" />
+                    <input id="submitButton2" type="submit" />
                 </div>
                 <div class="hiddenButton">
                     <button>Edit</button>
@@ -86,13 +88,13 @@
             </div>
             <div>
                 <div>
-                    <p></p>
+                    <p id="imageComment3"></p>
                 </div>
                 <div>
-                    <input type="text" />
+                    <input id="imputField3" type="text" />
                 </div>
                 <div>
-                    <input type="submit" />
+                    <input is="submitButton3" type="submit" />
                 </div>
                 <div class="hiddenButton">
                     <button>Edit</button>
