@@ -10,10 +10,34 @@ body{
     align-items: center;
 }
 
-.header{
-    display: flex;
-    justify-content: center;
-}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 12% 13% [headerstart] 50% [headerend] 13% [buttonstart] 12% [buttonend];
+    grid-template-rows: [buttontop] 30px [middlepart] 100px [headerbottom];
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+
+  }
+
+  .header {
+      grid-column-start: headerstart;
+      grid-column-end: headerend;
+      grid-row-start: middlepart;
+	  grid-row-end: headerbottom;
+      text-align: center;
+      font-size: 30px;
+
+  }
+
+  .button {
+      grid-column-start: buttonstart;
+      grid-column-end: buttonend;
+      grid-row-start: buttontop;
+      grid-row-end: middlepart;
+      
+  }
 
 .container{
     display: flex;
@@ -25,3 +49,7 @@ body{
     text-align: center;
     width: 100%;
 }
+ .picture{
+     fill: brown;
+     size: 80px;
+ }
