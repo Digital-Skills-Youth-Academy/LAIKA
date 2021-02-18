@@ -14,6 +14,12 @@ flex-direction: column;
     width: 50%;
     border: solid 5px white;
     align-items: center;
+    justify-self: center;
+    height: 75%;
+    margin-top: 15px;
+    justify-content: space-around;
+
+
 }
 
 
@@ -21,18 +27,22 @@ flex-direction: column;
     padding-top: 10px;
     padding-right: 10px;
     padding-left: 10px;
-
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
   }
 
   .header {
-      padding: 0 35% 0 45%;
-
+     
       font-size: 30px;
 
   }
 
   .button {
-      display: inline;
+      position: fixed;
+      float: right;
+      right: 40px;
   }
 
 .footer{
@@ -62,17 +72,22 @@ flex-direction: column;
 #left-image{
     align-self: flex-start;
     margin-bottom: auto;
+    flex-grow: 2;
 }
 
 #right-image{
     align-self:  flex-end;
     margin-top: auto;
+    flex-grow: 2;
 }
 
 .survey-bit{ 
     border: solid 5px white;
     align-items: center;
-    flex-grow: 2;
+    flex-grow: 3;
     height: 500px;
-    padding: 0 50px;
+    padding: 0 25px;
+    margin: 0 25px;
+    display: flex;
+    flex-direction: column; 
 }
