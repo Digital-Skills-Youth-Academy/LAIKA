@@ -45,11 +45,17 @@ flex-direction: column;
       right: 40px;
   }
 
+  .submitbutton{
+   display: ;
+    
+  }
+
 .footer{
     position: fixed;
     bottom: 0%;
     text-align: center;
     width: 100%;
+    background-color: brown;
 }
 
     .placeholder {
@@ -90,4 +96,5 @@ flex-direction: column;
     margin: 0 25px;
     display: flex;
     flex-direction: column; 
+    justify-content: inherit;
 }
