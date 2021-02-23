@@ -13,7 +13,7 @@
 }
 .innerheader {
   width: 300px;
-  height: 70%;
+  height: 60%;
   display: block;
   margin: 0 auto;
   color: rgb(34, 21, 94);
@@ -21,12 +21,11 @@
   background-color: aliceblue;
   text-align: center;
 }
-/*div {
+div {
   border: 1px solid gray;
-  padding: 20px;
-}*/
-.textformatting {
+  padding: 10px;
 }
+
 h1 {
   text-align: center;
   text-transform: uppercase;
@@ -42,4 +41,11 @@ p {
 a {
   text-decoration: none;
   color: #008cba;
+}
+.icons img {
+  width: 35px;
+}
+.icons {
+  display: flex;
+  flex-direction: row;
 }
