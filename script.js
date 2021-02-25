@@ -75,20 +75,5 @@ function editDescription3() {
 }
 
 
-var myDoughnutChart = new Chart(ctx, {
-    type: 'doughnut',
-    data: data,
-    options: options
-});
-
-data = {
-    datasets: [{
-        data: [10, 20, 30]
-    }],
-
-    labels: [
-        'Red',
-        'Yellow',
-        'Blue'
-    ]
-};
+// var Percent = document.getElementById('canvas').getContext('2d');
+// var percentChart = new Chart(context).Pie(data);

@@ -37,3 +37,7 @@ body {
 .hiddenButton {
   display: none;
   }
+
+  #PercentageArt {
+    background-color: #8872ad;
+  }
