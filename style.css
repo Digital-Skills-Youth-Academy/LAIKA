@@ -1,5 +1,5 @@
 body{
-    background-color: #32558c;
+    background-color:#4A3967;
 }
 
 .body-wrapper{
@@ -55,7 +55,7 @@ flex-direction: column;
     bottom: 0%;
     text-align: center;
     width: 100%;
-    background-color: brown;
+    background-color: #8872ad;
 }
 
     .placeholder {
@@ -69,7 +69,7 @@ flex-direction: column;
 .centerwrapper{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     padding-top: 10px;
     padding-right: 10px;
     padding-left: 10px;
@@ -79,6 +79,8 @@ flex-direction: column;
     align-self: flex-start;
     margin-bottom: auto;
     flex-grow: 2;
+    margin-left: -50px;
+    
 }
 
 #right-image{
@@ -88,7 +90,6 @@ flex-direction: column;
 }
 
 .survey-bit{ 
-    border: solid 5px white;
     align-items: center;
     flex-grow: 3;
     height: 500px;
@@ -96,5 +97,6 @@ flex-direction: column;
     margin: 0 25px;
     display: flex;
     flex-direction: column; 
-    justify-content: inherit;
+    justify-content: space-evenly;
+
 }
