@@ -5,21 +5,29 @@
   text-decoration: none;
 }
 .header {
-  width: 100%;
+  /* width: 100%;
   height: 80px;
   display: block;
   padding: 10px;
-  background: #ffdcaf;
+  background: #ffdcaf; */
+  display: flex;
 }
 .innerheader {
-  width: 300px;
-  height: 60%;
-  display: block;
-  margin: 0 auto;
+  /* width: 300px;
+  height: 60%; */
+  /* display: block; */
+  /* margin: 0 auto; */
   color: rgb(34, 21, 94);
   font-size: 30px;
   background-color: aliceblue;
   text-align: center;
+}
+/* .head-container { */
+/* display: flex; */
+/* } */
+#logo {
+  width: 100px;
+  background-color: black;
 }
 div {
   border: 1px solid gray;
@@ -44,8 +52,26 @@ a {
 }
 .icons img {
   width: 35px;
+  background-color: black;
 }
 .icons {
   display: flex;
   flex-direction: row;
+}
+.Homeless-shelter {
+  display: flex;
+  width: 290px;
+  height: 250px;
+  flex-direction: column;
+}
+.cards {
+  display: flex;
+  justify-content: space-between;
+}
+.texts {
+  display: flex;
+}
+.categories {
+  display: flex;
+  justify-content: space-between;
 }
