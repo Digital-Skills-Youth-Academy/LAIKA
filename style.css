@@ -13,11 +13,12 @@ flex-direction: column;
     flex-direction: column;
     width: 50%;
     border: solid 5px white;
-    align-items: center;
+    align-items: left;
     justify-self: center;
     height: 75%;
-    margin-top: 15px;
     justify-content: space-around;
+    padding: 15px;
+ 
 
 
 }
@@ -56,6 +57,7 @@ flex-direction: column;
     text-align: center;
     width: 100%;
     background-color: #8872ad;
+    left: 0%;
 }
 
     .placeholder {
