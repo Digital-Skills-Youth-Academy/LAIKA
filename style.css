@@ -37,6 +37,7 @@ flex-direction: column;
   .header {
      
       font-size: 30px;
+ color: #e8e5f6;
 
   }
 
@@ -56,7 +57,7 @@ flex-direction: column;
     bottom: 0%;
     text-align: center;
     width: 100%;
-    background-color: #8872ad;
+    background-color: #e8e5f6;
     left: 0%;
 }
 
