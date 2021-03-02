@@ -1,19 +1,19 @@
 let submitButton1 = document.getElementById('submitButton1');
-submitButton1.addEventListener("click", comment1);
+submitButton1.addEventListener("click", description1);
 let inputField1 = document.getElementById('inputField1');
 let edit1 = document.getElementById('editButton1');
 edit1.addEventListener("click", editDescription1);
 
 
 let submitButton2 = document.getElementById('submitButton2');
-submitButton2.addEventListener("click", comment2);
+submitButton2.addEventListener("click", description2);
 let inputField2 = document.getElementById('inputField2');
 let edit2 = document.getElementById('editButton2');
 edit2.addEventListener("click", editDescription2);
 
 
 let submitButton3 = document.getElementById('submitButton3');
-submitButton3.addEventListener("click", comment3);
+submitButton3.addEventListener("click", description3);
 let inputField3 = document.getElementById('inputField3');
 let edit3 = document.getElementById('editButton3');
 edit3.addEventListener("click", editDescription3);
@@ -22,7 +22,7 @@ edit3.addEventListener("click", editDescription3);
 let addImage = document.getElementById('addImage');
 
 
-function comment1() {
+function description1() {
         event.preventDefault();
         document.getElementById('imageDescription1').innerHTML = inputField1.value;
         inputField1.value = "";
@@ -32,7 +32,7 @@ function comment1() {
     
 }
 
-function comment2() {
+function description2() {
         event.preventDefault();
         edit2.style.display = "block";
         document.getElementById('imageDescription2').innerHTML = inputField2.value;
@@ -42,7 +42,7 @@ function comment2() {
         inputField2.style.display = "none";
 }
 
-function comment3() {
+function description3() {
         event.preventDefault();
         edit3.style.display = "block";
         document.getElementById('imageDescription3').innerHTML = inputField3.value;
@@ -74,6 +74,6 @@ function editDescription3() {
     inputField3.value = document.getElementById('imageDescription3').innerText;
 }
 
-
+// This is for the potential imported google graph.
 // var Percent = document.getElementById('canvas').getContext('2d');
 // var percentChart = new Chart(context).Pie(data);
