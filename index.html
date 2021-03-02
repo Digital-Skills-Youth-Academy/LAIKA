@@ -27,9 +27,8 @@
         </header>
 
         <container>
-            <div id="percentageArt">
-                <canvas></canvas>
-            </div>
+            <div id="percentageArt"></div>
+                <canvas id="canvas" style="height: 45%; width: 45%;"></canvas>
             <div>
                 <div>
                     <h3>Information!</h3>
@@ -63,7 +62,7 @@
             <!--These divs will hold comments for each image.-->
             <div>
                 <div>
-                    <p id="imageComment1"></p>
+                    <p id="imageDescription1"></p>
                 </div>
                 <div>
                     <input id="inputField1" type="text" />
@@ -71,13 +70,13 @@
                 <div>
                     <input id="submitButton1" type="submit" />
                 </div>
-                <!-- <div class="hiddenButton">
+                <div id="editButton1" class="hiddenButton">
                     <button>Edit</button>
-                </div> -->
+                </div>
             </div>
             <div>
                 <div>
-                    <p id="imageComment2"></p>
+                    <p id="imageDescription2"></p>
                 </div>
                 <div>
                     <input id="inputField2" type="text" />
@@ -85,13 +84,13 @@
                 <div>
                     <input id="submitButton2" type="submit" />
                 </div>
-                <!-- <div class="hiddenButton">
+                <div id="editButton2" class="hiddenButton">
                     <button>Edit</button>
-                </div> -->
+                </div>
             </div>
             <div>
                 <div>
-                    <p id="imageComment3"></p>
+                    <p id="imageDescription3"></p>
                 </div>
                 <div>
                     <input id="inputField3" type="text" />
@@ -99,9 +98,9 @@
                 <div>
                     <input id="submitButton3" type="submit" />
                 </div>
-                <!-- <div class="hiddenButton">
+                <div id="editButton3" class="hiddenButton">
                     <button>Edit</button>
-                </div> -->
+                </div>
             </div>
         </container>
 
@@ -109,7 +108,139 @@
             <div></div>
         </footer>
 
-        <script src="script.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+        <script>
+            // google.charts.load('current', {'packages':['corechart']});
+            // google.charts.setOnLoadCallback(drawChart);
+
+            // // Draw the chart and set the chart values
+            // function drawChart() {
+            //     var data = google.visualization.arrayToDataTable([
+            //     ['Volunteering Type', 'Total Volunteering hours per Category'],
+            //     ['Wildlife Protection', 8],
+            //     ['Education', 2],
+            //     ['Agriculture', 4],
+            //     ['Community Development', 4],
+            //     ['Health and Human Services', 8],
+            //     ['Female Empowerment', 3],
+            //     ['Animal Welfare', 6],
+            //     ['Public Awareness', 5]
+            //     ]);
+
+            //     // Optional; add a title and set the width and height of the chart
+            //     var options = {'title':'Your Volunteering', 'width':550, 'height':400};
+
+            //     // Display the chart inside the <div> element with id="piechart"
+            //     var chart = new google.visualization.PieChart(document.getElementById('percentageArt'));
+            //     chart.draw(data, options).backgroundcolor = "red";
+            // }
+// }   
+
+var myCanvas = document.getElementById("canvas");
+ 
+var ctx = myCanvas.getContext("2d");
+
+function drawLine(ctx, startX, startY, endX, endY){
+    ctx.beginPath();
+    ctx.moveTo(startX,startY);
+    ctx.lineTo(endX,endY);
+    ctx.stroke();
+}
+
+function drawArc(ctx, centerX, centerY, radius, startAngle, endAngle){
+    ctx.beginPath();
+    ctx.arc(centerX, centerY, radius, startAngle, endAngle);
+    ctx.stroke();
+}
+
+function drawPieSlice(ctx,centerX, centerY, radius, startAngle, endAngle, color ){
+    ctx.fillStyle = color;
+    ctx.beginPath();
+    ctx.moveTo(centerX,centerY);
+    ctx.arc(centerX, centerY, radius, startAngle, endAngle);
+    ctx.closePath();
+    ctx.fill();
+}
+
+drawLine(ctx,100,100,200,200);
+drawArc(ctx, 150,150,150, 0, Math.PI/3);
+drawPieSlice(ctx, 150,150,150, Math.PI/2, Math.PI/2 + Math.PI/4, '#ff0000');
+
+var volunteeringHours = {
+    "Wildlife Protection": 10,
+    "Agriculture": 14,
+    "Education": 12,
+    "Community Development": 12,
+    "EducatioHealthcare and Human Services": 20,
+    "Female Empowerment": 19,
+    "Animal Welfare": 17,
+    "Social Awareness": 15
+};
+
+var Piechart = function(options){
+    this.options = options;
+    this.canvas = options.canvas;
+    this.ctx = this.canvas.getContext("2d");
+    this.colors = options.colors;
+ 
+    this.draw = function(){
+        var total_value = 0;
+        var color_index = 0;
+        for (var categ in this.options.data){
+            var val = this.options.data[categ];
+            total_value += val;
+        }
+ 
+        var start_angle = 0;
+        for (categ in this.options.data){
+            val = this.options.data[categ];
+            var slice_angle = 2 * Math.PI * val / total_value;
+ 
+            drawPieSlice(
+                this.ctx,
+                this.canvas.width/2,
+                this.canvas.height/2,
+                Math.min(this.canvas.width/2,this.canvas.height/2),
+                start_angle,
+                start_angle+slice_angle,
+                this.colors[color_index%this.colors.length]
+            );
+ 
+            start_angle += slice_angle;
+            color_index++;
+        }
+ 
+        //drawing a white circle over the chart
+        //to create the doughnut chart
+        if (this.options.doughnutHoleSize){
+            drawPieSlice(
+                this.ctx,
+                this.canvas.width/2,
+                this.canvas.height/2,
+                this.options.doughnutHoleSize * Math.min(this.canvas.width/2,this.canvas.height/2),
+                0,
+                2 * Math.PI,
+                "#8872ad"
+            );
+        }
+ 
+    }
+}
+
+var myDougnutChart = new Piechart(
+    {
+        canvas:myCanvas,
+        data:volunteeringHours,
+        colors:["red","magenta", "green","yellow","teal","orange","maroon","purple"],
+        doughnutHoleSize:0.5
+    }
+);
+myDougnutChart.draw();
+
+        </script> 
     </body>
 
 </html>

@@ -9,11 +9,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    
-    
   }
-
-
 
   .logo {
     display: inline-block;
@@ -63,18 +59,33 @@ body {
     align-items: flex-start;
   }
 
- #percentageArt {
-   display: grid;
-   place-items: center;
- }
- 
-
-
-
-
+    background-color: #8872ad ;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+.topnav {
+  overflow: hidden;
+  background-color:#021c33;
+}
+    
+.topnav a {
+  float: left;
+  color: #8872ad;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+    
+.topnav a:hover {
+  background-color: #fffbee;
+  color: black;
+}
+  
 #navigation {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .nav-button {
@@ -82,3 +93,11 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+
+.hiddenButton {
+  display: none;
+  }
+
+  #PercentageArt {
+    background-color: #8872ad;
+  }
