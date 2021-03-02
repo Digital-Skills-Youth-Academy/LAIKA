@@ -22,15 +22,18 @@
   background-color: aliceblue;
   text-align: center;
 }
-/* .head-container { */
-/* display: flex; */
-/* } */
+.head-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #logo {
   width: 100px;
   background-color: black;
 }
 div {
-  border: 1px solid gray;
+  /* border: 1px solid gray; */
   padding: 10px;
 }
 
@@ -51,22 +54,28 @@ a {
   color: #008cba;
 }
 .icons img {
-  width: 35px;
+  width: 30px;
+  height: 30px;
   background-color: black;
 }
 .icons {
   display: flex;
   flex-direction: row;
+  width: 34%;
 }
 .Homeless-shelter {
   display: flex;
   width: 290px;
   height: 250px;
   flex-direction: column;
+  border: 1px solid gray;
 }
 .cards {
   display: flex;
   justify-content: space-between;
+}
+.textformatting {
+  border: 1px solid gray;
 }
 .texts {
   display: flex;
@@ -74,4 +83,17 @@ a {
 .categories {
   display: flex;
   justify-content: space-between;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+}
+.links {
+  padding: 26px;
+}
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: DarkSalmon;
+  color: white;
 }
