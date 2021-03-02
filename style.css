@@ -70,5 +70,15 @@ body {
  
 
 
-/* #footer {
- } */
+
+
+#navigation {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-button {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
