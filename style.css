@@ -1,7 +1,13 @@
 body {
+    background-image: linear-gradient(#fdfdfd,#4a3967);
     background-color: #2f2e3e;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Open Sans"; 
+    font-size: 24px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 100; 
+    line-height: 26.4px; 
     color: #5c3b83
   }
 
@@ -26,7 +32,6 @@ body {
     flex-direction: row;
     align-items: center;
     overflow: hidden;
-    background-color: #dad3f8;
     justify-content: space-evenly;
     
     
@@ -59,7 +64,7 @@ body {
     align-items: flex-start;
   }
 
-    background-color: #8872ad ;
+    background-color: #8872ad;
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
     }
