@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>My Impact</title>
+        <link rel="stylesheet" type="text/css" href="reset.css" />
+        <link rel="stylesheet" type="text/css" href="impactpage.css" />
+    </head>
+
+    <body>
+        <header id="header">
+            <div class="topnav">
+                <img class="logo" src="logowhite.png">
+                <div id="myImpact">
+                    <h1>My Impact</h1>
+                </div> 
+                <span class="social-container">
+                    
+                    <a href="#tw">Home</a>
+                    <a href="#ig">Contact</a>
+                    <a href="#fb">Map</a>
+                    
+                </span>
+                
+            </div>
+            
+        </header>
+
+        <container>
+            <div id="graph">
+                <canvas id="myChart"></canvas>
+            </div>
+            <!-- <div>
+                <h3>Information!</h3>
+            </div>
+            <div>
+                <p>More information!</p>
+            </div> -->
+        </container>
+
+        <container id="information">
+            <div style="display: table-cell;">
+                <h1>Your Images</h1>
+            </div>
+            <div style="display: table-cell;">
+                <!-- <button id="addImage">+</button> -->
+                <!-- <form action="/action_page.php">
+                    <input type="file" id="addImage" name="filename">
+                </form> -->
+                <input type="button" id="get_file" value="Add Image">
+                <input type="file" id="my_file">
+            </div>
+        </container>
+
+        <container id="memories-grid">
+            <!--These divs will hold comments for each image.-->
+                <div id="memoryImage1" style="display: table-cell;">
+                    <div id="image1">
+                        <img class="image" src="logowhite.png" width="190px" height="auto" />
+                    </div>
+                    <div class="stretchy">
+                        <div>
+                            <p id="imageDescription1" class="whiteText"></p>
+                        </div>
+                        <div>
+                            <input id="inputField1" type="text" />
+                        </div>
+                        <div>
+                            <input id="submitButton1" class="submitButton" type="submit" />
+                        </div>
+                        <div id="editButton1" class="hiddenButton">
+                            <button class="editButton">Edit</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="memoryImage2" style="display: table-cell;">
+                    <div id="image2">
+                        <img class="image" src="logowhite.png" width="190px" height="auto" />
+                    </div>
+                    <div class="stretchy">
+                        <div>
+                            <p id="imageDescription2" class="whiteText"></p>
+                        </div>
+                        <div>
+                            <input id="inputField2" type="text" />
+                        </div>
+                        <div>
+                            <input id="submitButton2" class="submitButton" type="submit" />
+                        </div>
+                        <div id="editButton2" class="hiddenButton">
+                            <button class="editButton">Edit</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="memoryimage3" style="display: table-cell;">
+                    <div  id="image3">
+                        <img class="image" src="logowhite.png" width="190px" height="auto" />
+                    </div>
+                    <div class="stretchy">
+                        <div>
+                            <p id="imageDescription3" class="whiteText"></p>
+                        </div>
+                        <div>
+                            <input id="inputField3" type="text" />
+                        </div>
+                        <div>
+                            <input id="submitButton3" class="submitButton" type="submit" />
+                        </div>
+                        <div id="editButton3" class="hiddenButton">
+                            <button class="editButton">Edit</button>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div id="memoryimage4" style="display: table-cell;">
+                    <div  id="image3">
+                        <img class="image" src="logowhite.png" width="190px" height="auto" />
+                    </div>
+                    <div class="stretchy">
+                        <div>
+                            <p id="imageDescription4" class="whiteText"></p>
+                        </div>
+                        <div>
+                            <input id="inputField4" type="text" />
+                        </div>
+                        <div>
+                            <input id="submitButton4" class="submitButton" type="submit" />
+                        </div>
+                        <div id="editButton4" class="hiddenButton" >
+                            <button class="editButton">Edit</button>
+                        </div>
+                    </div>
+                </div>
+            
+        </container>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="impactpage.js"></script>
+    </body>
+</html>
