@@ -101,3 +101,198 @@ body {
   #PercentageArt {
     background-color: #8872ad;
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.submitButton {
+  padding: 4px;
+  border-radius:10px;
+  border-style:solid;
+  border-color:#5c3b83;
+  background-color: #8872ad;
+  color:white;
+  margin-top:8px;
+  text-align:center;
+}
+
+.editButton {
+  padding: 4px;
+  border-radius:10px;
+  border-style:solid;
+  border-color:#5c3b83;
+  background-color: #8872ad;
+  color:white;
+  margin-top:8px;
+  text-align:center;
+}
+
+  #graph {
+    width: 50%;
+    margin: 15px auto;
+}
+
+#myChart {
+  color: white;
+}
+
+.whiteText {
+  padding: 4px;
+  border-radius:10px;
+  border-style:solid;
+  border-color:#5c3b83;
+  background-color: #8872ad;
+  color:white;
+  margin:10px;
+  text-align:center;
+  display: none;
+}
+
+#memories-grid {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: wrap;
+  text-align: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+}
+
+/* #memoryImage1 {
+  display: flex;
+  width: 25%;
+  height: auto;
+  padding: 10px;
+  margin: 10px;
+}
+
+#memoryImage2 {
+  display: flex;
+  width: 25%;
+  height: auto;
+  padding: 10px;
+  margin: 10px;
+}
+
+#memoryImage3 {
+  display: flex;
+  width: 25%;
+  height: auto;
+  padding: 10px;
+  margin: 10px;
+}
+
+#memoryImage4 {
+  display: flex;
+  width: 25%;
+  height: auto;
+  padding: 10px;
+  margin: 10px;
+} */
+
+#my_file {
+  display: none;
+}
+
+#get_file {
+  background: #8872ad;
+  border: 2px solid #5c3b83;
+  padding: 4px;
+  border-radius: 10px;
+  margin: 10px;
+  cursor: pointer;
+  color: white;
+}
