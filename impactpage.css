@@ -34,6 +34,7 @@ body {
    #myImpact {
      display:flex;
      justify-content: center;
+     font-size: 58px;
   }
 
 
