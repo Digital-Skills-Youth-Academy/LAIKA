@@ -2,16 +2,18 @@
 <html>
   <head>
     <link rel="stylesheet" href="homePage.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="header">
-      <div class="icons">
+      <!-- <div class="icons">
         <img src="Images/Facebook Logo.png">   
         <img src="Images/YouTube Logo.png">
-      </div> 
+      </div>  -->
        <div class="head-container"> 
-        <div class="innerheader">Welcome to laika</div>
-        <img id="logo" src="Images/Laika_2.png"> 
+        <div class="innerheader">Welcome to Laika</div>
+        <img id="logo" src="Images/logowhite.png"> 
       </div>
       <!-- <div class="navbar-container"> -->
         <ul class="navbar">
@@ -23,47 +25,64 @@
     </div>
 
     <div class="textformatting">
-      <h1>text formatting</h1>
-      <p>This text is styled with some of the text formatting properties. The heading uses the text-align, text-transform, and color properties.
-      The paragraph is indented, aligned, and the space between characters is specified. The underline is removed from this colored
-      <a target="_blank" href="tryit.asp?filename=trycss_text">"Try it Yourself"</a> link.</p>
+      <h1>Welcome To Laika</h1>
+      <p class="x">This website is to help you to find voleentering opertunities in a simple way. You can search up where to go
+       and see what voleenterning opertunities are out there for you. Even see your own categories you are interested in and take a survey on them. Lakia just made it easy for you. 
+      </p>
     </div>
 
       <script src="homePage.js"></script>
     <div class="categories">
       <div class="btn-container">
-        <button>Homeless-shelter</button>
-        <button>Animal Care</button>
-        <button>Book Drive</button>
-        <button>Nursing Home</button>
+        <button class="buttons">Homeless-shelter</button>
+        <button class="buttons">Animal Care</button>
+        <button class="buttons">Book Drive</button>
+        <button class="buttons">Nursing Home</button>
       </div>
      <input type="text" placeholder="Search Categories">
     </div>
       <div class="cards"> 
       
       <div class="Homeless-shelter">
-        <h1>Homeless shelters</h1>
-        <p class="texts">You can choose to help feed the Homeless. </p>
+        <!-- <h1>Homeless shelters</h1>
+        <p class="texts">You can choose to help feed the Homeless. </p> -->
+        <img id="homeless-pic" src="Images/covid_homeless_photo5_1_cropped.jpg">
+        <div class="middle">
+          <div class="text">Homeless Shelter</div>
+        </div>
       </div>
 
     <div class="Homeless-shelter">
-      <h1>Homeless shelters</h1>
-      <p class="texts">You can choose to help feed the Homeless.</p>
+      <!-- <h1>Animal Care</h1> -->
+      <!-- <p class="texts">You can choose to help feed the Homeless.</p> -->
+      <img id="animal-pic" src="Images/animalwelfare.jpg">
+      <div class="middle">
+        <div class="text">Animal Care</div>
+      </div>
     </div>
 
     <div class="Homeless-shelter">
-      <h1>Homeless shelters</h1>
-      <p class="texts">You can choose to help feed the Homeless. </p>
+      <!-- <h1>Book Drive</h1>
+      <p class="texts">You can donate old books to children. </p> -->
+      <img id="bookdrive-pic" src="Images/bookdrive_orig.jpg">
+      <div class="middle">
+        <div class="text">Book Drive</div>
+      </div>
     </div>
 
-    <div class="Homeless-shelter">
-      <h1>Homeless shelters</h1>
-      <p class="texts">You can choose to help feed the Homeless. </p>
+    
+      <div class="Homeless-shelter">
+      <!-- <h1>Nursing Home</h1>
+      <p class="texts">You can help spread joy to nursing homes. </p> -->
+      <img id="nursinghome-pic" src="Images/nursin_home.jpg">
+      <div class="middle">
+        <div class="text">Nursing Home</div>
+      </div>
     </div>
  </div>
  <footer>
-   <p>SOME TEXT HERE</p>
-   <a href="mailto:hege@example.com">hege@example.com</a></p>
+   <p>Contact</p>
+   <a href="mailto:hege@example.com">volunteerLaika@gmail.com</a></p>
  </footer>
   </body>
 </html>
