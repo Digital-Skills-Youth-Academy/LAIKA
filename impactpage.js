@@ -42,7 +42,6 @@ function description1() {
 
 function description2() {
         event.preventDefault();
-        edit2.style.display = "block";
         document.getElementById('imageDescription2').innerHTML = inputField2.value;
         inputField2.value = "";
         document.getElementById('imageDescription2').style.display = "block";
@@ -50,10 +49,8 @@ function description2() {
         submitButton2.style.display = "none";
         inputField2.style.display = "none";
 }
-
 function description3() {
         event.preventDefault();
-        edit3.style.display = "block";
         document.getElementById('imageDescription3').innerHTML = inputField3.value;
         inputField3.value = "";
         document.getElementById('imageDescription3').style.display = "block";
@@ -64,7 +61,6 @@ function description3() {
 
 function description4() {
   event.preventDefault();
-  edit4.style.display = "block";
   document.getElementById('imageDescription4').innerHTML = inputField4.value;
   inputField4.value = "";
   document.getElementById('imageDescription4').style.display = "block";
