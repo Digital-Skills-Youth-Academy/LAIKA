@@ -18,6 +18,8 @@ flex-direction: column;
     height: 75%;
     justify-content: space-around;
     padding: 15px;
+    color: #e9def9;
+    
  
 
 
@@ -32,12 +34,13 @@ flex-direction: column;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+
   }
 
   .header {
      
       font-size: 30px;
- color: #e8e5f6;
+    color: #e8e5f6;
 
   }
 
@@ -47,10 +50,10 @@ flex-direction: column;
       right: 40px;
   }
 
-  .submitbutton{
+  /* .submitbutton{
    display: ;
     
-  }
+  } */
 
 .footer{
     position: fixed;
@@ -101,5 +104,9 @@ flex-direction: column;
     display: flex;
     flex-direction: column; 
     justify-content: space-evenly;
+    background-color: #e9def9:
 
+}
+body {
+    font-family: 'Open Sans', sans-serif; 
 }
