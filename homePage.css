@@ -90,7 +90,7 @@ footer > a {
   justify-content: space-between;
 }
 .textformatting {
-  border: 1px solid gray;
+  /* border: 1px solid gray; */
   padding: 1%;
 }
 .texts {
